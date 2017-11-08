@@ -1,0 +1,149 @@
+
+body {
+    background: #191818;
+    font-family: "Open Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../img/background/fondo_home.png");
+}
+header {
+    margin-top: 30px;
+}
+
+header .nav {
+    min-height: 80px;
+    overflow: hidden;
+    background: #fff;
+}
+
+header .menu {
+    padding: 0;
+}
+
+header .menu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 30px;
+}
+
+header .menu a div span {
+    font-weight: 600;
+}
+
+header .menu .color-1 { background: #323232}
+header .menu .color-2 { background: #323232}
+header .menu .color-3 { background: #323232}
+header .menu .color-4 { background: #323232}
+header .menu .color-5 { background: #323232}
+header .menu .color-6 { background: #323232}
+header .menu .color-1:hover { background: #37AEF9}
+header .menu .color-2:hover { background: #37AEF9}
+header .menu .color-3:hover { background: #37AEF9}
+header .menu .color-4:hover { background: #37AEF9}
+header .menu .color-5:hover { background: #37AEF9}
+header .menu .color-6:hover { background: #37AEF9}
+
+#container {
+    width: 900px;
+    overflow: hidden;
+    margin: 0px auto;
+    padding: 0px;
+    border: 0px;
+}
+#container > #sidebar {
+    position: relative;
+    width: 160px auto;
+    margin: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 0px;
+    float: left;
+    
+}
+#container > #sidebar img {
+    width: 35px;
+}
+#container > #content {
+    width: 660px;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 0px;
+    float: right;
+
+}
+
+#home {
+    color: #000;
+    background-image: url('../img/background/fondo_home.png'); 
+    background-attachment: fixed;
+    width: auto;
+    padding-top: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#personaje {
+    color: #000;
+    background-image: url('../img/background/fondo_1.png'); 
+    background-attachment: fixed;
+    width: auto;
+    padding-top: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#peliculas {
+    color: #000;
+    background-image: url('../img/background/fondo_2.png'); 
+    background-attachment: fixed;
+    width: auto;
+    padding-top: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#planetas {
+    color: #000;
+    background-image: url('../img/background/fondo_3.png'); 
+    background-attachment: fixed;
+    width: auto;
+    padding-top: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#planetas .caja {
+    background-color: #000;
+}
+
+#vehiculos {
+    color: #000;
+    background-image: url('../img/background/fondo_4.png'); 
+    background-attachment: fixed;
+    width: auto;
+    padding-top: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#crucerosEspaciales {
+    color: #000;
+    background-image: url('../img/background/fondo_5.png'); 
+    background-attachment: fixed;
+    width: auto;
+    padding-top: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+footer {
+    width: 900px;
+    height: 50px;
+    margin: 0px auto;
+    padding: 0px;
+    border: 0px;
+    background: #323232;
+}
+footer .container > p {
+    position: absolute;
+    color: #9A9696;
+}
