@@ -1,37 +1,51 @@
-$(function(){
-    cargarPeliculas('https://swapi.co/api/films/');
-});
 
-function cargarPeliculas(url) {
+$(document).ready(function () {
+    var root = 'https://swapi.co/api/films/';
+
+    // Metodo 1
+    /*
     $.ajax({
-        url: url,
+        url: root,
+        method: 'GET',
+    }).then(function (data) {
+        //alert(data);
+        console.log(data);
+        var tarjeta = '';
+        for (var i = 0; i < data.results.length; i++) {
+            tarjeta += '<div class="col-md-4">';
+            tarjeta += '    <h1>' + data.results[i].title + '</h1>';
+            tarjeta += '</div>';
+        }
+        console.log(tarjeta);
+        $("#peliculas").html(tarjeta);
+    });
+    */
+    // Metodo 2
+    $.ajax({
+        url: root,
         method: 'GET',
         success: function (data) {
+            //alert(data);
             console.log(data);
-            var peliculas = document.getElementById("home");
-            //console.log(peliculas);
-            $("#home").empty();
-
-            var html = '';
+            var tarjeta = '';
             for (var i = 0; i < data.results.length; i++) {
-                console.log(data.results[i].title);
-                html += '<div class="col-lg-4 col-md-6 mb-4">';
-                html += '    <div class="card">';
-                html += '        <img class="card-img-top" src="http://placehold.it/500x325" alt="">';
-                html += '        <div class="card-body">';
-                html += '            <h4 class="card-title">'+data.results[i].title+'</h4>';
-                html += '            <p class="card-text">'+data.results[i].opening_crawl.substring(0, 150)+'...</p>';
-                html += '        </div>';
-                html += '        <div class="card-footer">';
-                html += '            <a href="../pelicula.html" class="btn btn-primary">Leer más!</a>';
-                html += '        </div>';
-                html += '    </div>';
-                html += '</div>';
+                tarjeta += '<div class="col-md-4">';
+                tarjeta += '<div class="imagen">';
+                tarjeta += '</div>';
+                tarjeta += '    <h1 data-title="'+data.results[i].title+'" data-toggle="modal" data-target="#exampleModal">' + data.results[i].title + '</h1>';
+                tarjeta += '    <p>' + data.results[i].opening_crawl + '</p>';
+                tarjeta += ' <a href="pelicula.html" class="btn btn-primary"> Read More!</a>';
+                tarjeta += '</div>';
             }
-            $("#home").html(html);
+            //console.log(tarjeta);
+            $("#home").html(tarjeta);
         },
         error: function (e) {
+            console.log(e);
+        },
+    });
 
-        }
-    })
-};
+	$('#exampleModal').on('show.bs.modal', function (e) {
+        $(this).find('.modal-title').html($(e.relatedTarget).data('title'));
+    });
+});

@@ -84,7 +84,21 @@ header .menu .color-6:hover { background: #37AEF9}
     background-repeat: no-repeat;
 }
 
-#personaje {
+#home h1 {
+    color: #E4F510;
+}
+
+#home p {
+    color: #CFCCCC;
+}
+
+
+
+#home .btn {
+    background-color: #A70000;
+}
+
+#personajes {
     color: #000;
     background-image: url('../img/background/fondo_1.png'); 
     background-attachment: fixed;
@@ -93,7 +107,34 @@ header .menu .color-6:hover { background: #37AEF9}
     background-position: center center;
     background-repeat: no-repeat;
 }
-#peliculas {
+
+#personajes h1 {
+    color: #E4F510;
+}
+
+#personajes h4 {
+    color: #CFCCCC;
+}
+
+#especies {
+    color: #000;
+    background-image: url('../img/background/fondo_6.png'); 
+    background-attachment: fixed;
+    width: auto;
+    padding-top: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#especies h1 {
+    color: #E4F510;
+}
+
+#especies h4 {
+    color: #CFCCCC;
+}
+
+#whole {
     color: #000;
     background-image: url('../img/background/fondo_2.png'); 
     background-attachment: fixed;
@@ -101,6 +142,24 @@ header .menu .color-6:hover { background: #37AEF9}
     padding-top: 80px;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+#peliculas h1 {
+    color: #E4F510;
+}
+#peliculas h3 {
+    color: #E4F510;
+}
+
+#peliculas h4 {
+    color: #CFCCCC;
+}
+
+#listado-personajes {
+    color: #CFCCCC;
+}
+#whole .btn {
+    background-color: #A70000;
 }
 
 #planetas {
@@ -113,8 +172,12 @@ header .menu .color-6:hover { background: #37AEF9}
     background-repeat: no-repeat;
 }
 
-#planetas .caja {
-    background-color: #000;
+#planetas h1 {
+    color: #E4F510;
+}
+
+#planetas h4 {
+    color: #CFCCCC;
 }
 
 #vehiculos {
@@ -126,6 +189,15 @@ header .menu .color-6:hover { background: #37AEF9}
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+#vehiculos h1 {
+    color: #E4F510;
+}
+
+#vehiculos h4 {
+    color: #CFCCCC;
+}
+
 #crucerosEspaciales {
     color: #000;
     background-image: url('../img/background/fondo_5.png'); 
@@ -134,6 +206,14 @@ header .menu .color-6:hover { background: #37AEF9}
     padding-top: 80px;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+#crucerosEspaciales h1 {
+    color: #E4F510;
+}
+
+#crucerosEspaciales h4 {
+    color: #CFCCCC;
 }
 footer {
     width: 900px;
