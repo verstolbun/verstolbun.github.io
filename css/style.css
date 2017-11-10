@@ -2,7 +2,7 @@
 body {
     background: #191818;
     font-family: "Open Sans", sans-serif;
-    margin: 0px;
+    margin: 0px auto;
     padding: 0px;
     background-image: url("../img/background/fondo_home.png");
 }
@@ -14,10 +14,13 @@ header .nav {
     min-height: 80px;
     overflow: hidden;
     background: #fff;
+    
 }
 
 header .menu {
+    margin: 0 auto;
     padding: 0;
+    border-radius: 25px;
 }
 
 header .menu a {
@@ -54,7 +57,7 @@ header .menu .color-6:hover { background: #37AEF9}
 #container > #sidebar {
     position: relative;
     width: 160px auto;
-    margin: 0px;
+    margin: 0 auto;
     padding-right: 20px;
     padding-left: 20px;
     border: 0px;
@@ -96,6 +99,7 @@ header .menu .color-6:hover { background: #37AEF9}
 
 #home .btn {
     background-color: #A70000;
+    border: 0;
 }
 
 #personajes {
@@ -155,11 +159,17 @@ header .menu .color-6:hover { background: #37AEF9}
     color: #CFCCCC;
 }
 
+#peliculas .poster {
+    width: 200px;
+    height: 300px;
+}
+
 #listado-personajes {
     color: #CFCCCC;
 }
 #whole .btn {
     background-color: #A70000;
+    border: 0;
 }
 
 #planetas {
@@ -220,10 +230,10 @@ footer {
     height: 50px;
     margin: 0px auto;
     padding: 0px;
-    border: 0px;
+    border-radius: 0 0 30px 30px;
     background: #323232;
 }
 footer .container > p {
     position: absolute;
-    color: #9A9696;
+    color: #C6BEBE;
 }

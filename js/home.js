@@ -30,8 +30,7 @@ $(document).ready(function () {
             var tarjeta = '';
             for (var i = 0; i < data.results.length; i++) {
                 tarjeta += '<div class="col-md-4">';
-                tarjeta += '<div class="imagen">';
-                tarjeta += '</div>';
+                tarjeta += '<a href="#" data-toggle="modal" data-target="#exampleModal"><img class="poster card-img-top" src="img/Posters/episode'+ data.results[i].episode_id +'.jpg" alt=""></a>';
                 tarjeta += '    <h1 data-title="'+data.results[i].title+'" data-toggle="modal" data-target="#exampleModal">' + data.results[i].title + '</h1>';
                 tarjeta += '    <p>' + data.results[i].opening_crawl + '</p>';
                 tarjeta += ' <a href="pelicula.html" class="btn btn-primary"> Read More!</a>';

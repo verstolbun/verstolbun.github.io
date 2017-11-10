@@ -14,7 +14,7 @@ $.ajax({
             tarjeta += '    <h4> Clasificación:' + data.results[i].classification + '</h4>';
             tarjeta += '    <h4> Designación:' + data.results[i].designation + '</h4>';
             tarjeta += '    <h4> Idioma: ' + data.results[i].language + '</h4>';
-            tarjeta += '    <h4> Planeta: ' + data.results[i].homeworld + '</h4>';
+            tarjeta += '    <h4> Planeta: ' + obtenerNombrePlaneta(data.results[i].homeworld) + '</h4>';
             tarjeta += '</div>';
         }
         //console.log(tarjeta);
@@ -24,6 +24,24 @@ $.ajax({
         console.log(e);
     },
 });
+
+function obtenerNombrePlaneta(url){
+    var nombre = '';
+    $.ajax({
+        url: url,
+        method: 'GET',
+        async: false,
+        success: function(data){
+            nombre = data.name;
+        },
+        error: function (e) {
+            console.log(e);
+        }
+
+    });
+
+    return nombre;
+}
 
 $('#exampleModal').on('show.bs.modal', function (e) {
     $(this).find('.modal-title').html($(e.relatedTarget).data('title'));

@@ -12,6 +12,7 @@ $.ajax({
             tarjeta += '<div class="col-md-4">';
             tarjeta += '    <h1 data-title="'+data.results[i].title+'" data-toggle="modal" data-target="#exampleModal">' + data.results[i].title + '</h1>';
             tarjeta += '    <h3> EPISODE ' + data.results[i].episode_id + '</h3>';
+            tarjeta += '<a href="#" data-toggle="modal" data-target="#exampleModal"><img class="poster card-img-top" src="img/Posters/episode'+ data.results[i].episode_id +'.jpg" alt=""></a>';
             tarjeta += '    <h4> Estreno:' + data.results[i].release_date + '</h4>';
             tarjeta += '    <h4> Director: ' + data.results[i].director + '</h4>';
             tarjeta += '    <h4> Productor: ' + data.results[i].producer + '</h4>';
