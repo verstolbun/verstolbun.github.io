@@ -190,6 +190,11 @@ header .menu .color-6:hover { background: #37AEF9}
     color: #CFCCCC;
 }
 
+#planetas .planetsphoto {
+    height: 50%;
+    width: 50%;
+}
+
 #vehiculos {
     color: #000;
     background-image: url('../img/background/fondo_4.png'); 
