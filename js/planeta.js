@@ -10,7 +10,7 @@ $.ajax({
         var tarjeta = '';
         for (var i = 0; i < data.results.length; i++) {
             tarjeta += '<div class="col-md-4">';
-            tarjeta += '<a href="#" data-toggle="modal" data-target="#exampleModal"><img class="poster card-img-top" src="img/'+ data.results[i].name +'.png" alt=""></a>';
+            tarjeta += '<a href="#" data-toggle="modal" data-target="#exampleModal"><img class="poster card-img-top" src="img/'+ data.results[i].name.replace(' ','') +'.png" alt="'+ data.results[i].name.replace(' ','') +'"></a>';
             tarjeta += '    <h1 data-title="'+data.results[i].name+'" data-toggle="modal" data-target="#exampleModal">' + data.results[i].name + '</h1>';
             tarjeta += '    <h4> Diámetro:' + data.results[i].diameter + '</h4>';
             tarjeta += '    <h4> Clima:' + data.results[i].climate + '</h4>';
